@@ -87,9 +87,9 @@ async def wait(chat_id: int):
 
 @bot.on_message(filters.command("start"))
 async def start(_, msg: Message):
-    buttons = [[InlineKeyboardButton(Strings.dev_channel, url=f'https://t.me/filetolink11}')]]
+    buttons = [[InlineKeyboardButton(Strings.dev_channel, url=f'https://t.me/{filetolink11}')]]
     if Config.Bot_Channel:
-        buttons.append([InlineKeyboardButton(Strings.bot_channel, url=f'https://t.me/filetolink11}')])
+        buttons.append([InlineKeyboardButton(Strings.bot_channel, url=f'https://t.me/{filetolink11}')])
     await msg.reply_text(Strings.start, reply_markup=InlineKeyboardMarkup(buttons))
 
 
